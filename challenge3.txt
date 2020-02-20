@@ -1,0 +1,44 @@
+public class ChallengeThree {
+
+    //Declaring Variables
+    Account acct;
+    String name;
+    Integer annRev;
+    String des;
+
+
+     public void SetValues(){
+
+        //Assigning vlaues to the variables 
+        name = 'Zim';
+        annRev = 100000;
+        des = 'This Account is owned by ';
+
+        // Initalizing the Account 
+        acct = new Account();
+
+        //Assigning values to the account 
+        acct.Name = name;
+        acct.AnnualRevenue = annRev;
+        acct.Description = des;
+    }
+
+    //Getter Method 
+    public void GetValues(){
+        //Test if working
+        System.debug('This is the num: ' + name);
+        System.debug('This is the name: ' + annRev);
+        System.debug('This is the num: ' + des);
+
+        System.debug('This is the name: ' + acct.Name);
+        System.debug('This is the Account Annual Revenue: ' + acct.AnnualRevenue);
+        System.debug('This is the Account Description: ' + acct.Description + acct.Name);
+    }
+}
+
+
+//Apex Debug code
+
+//ChallengeThree Zim = new ChallengeThree();
+//Zim.SetValues();
+//Zim.GetValues();

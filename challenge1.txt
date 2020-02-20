@@ -1,0 +1,31 @@
+//Jon and Fatgezim 
+
+public class ChallengeOne {
+
+    //declaring values 
+    Integer num; 
+    String name;
+    Account acct;
+
+    //Setter Method
+    public void SetValues(){
+        num = 10;
+        name  = 'Jon';
+        acct = new Account();
+        acct.name = name;
+    }
+
+    //Getter Method 
+    public void GetValues(){
+        System.debug('This is the num: ' + num);
+        System.debug('This is the name: ' + name);
+        System.debug('This is the Account number: ' + acct);
+        System.debug('This is the Account Name: ' + acct.name);
+    }
+
+}
+
+//Apex Debug Code
+//ChallengeOne Jon = new ChallengeOne();
+//Jon.SetValues();
+//Jon.GetValues();

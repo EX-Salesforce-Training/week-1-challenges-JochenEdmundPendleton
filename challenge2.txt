@@ -1,0 +1,35 @@
+//Jon & Fatgezim challenge two
+
+public class ChallengeTwo {
+
+    public void ForLoop(){
+        List<Integer> myInts = new List<Integer>{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+            for (Integer i : myInts){
+                System.debug(i);
+            }
+	} 
+
+    public void WhileLoop(){
+
+		Integer I = 0;
+        while (I < 10) {
+            I++;
+        }
+        System.debug(I);
+    }
+
+    public void Iffy(){
+        Boolean condition = false;
+        if (condition == true){
+            system.debug('first if block');
+        }
+                    if (condition != true){
+                system.debug('second if block');
+            }
+    }
+    /*Apex Debug Code
+     * ChallengeTwo Conditionals = new ChallengeTwo();
+		Conditionals.ForLoop();
+		Conditionals.WhileLoop();
+		Conditionals.Iffy();*/
+}
